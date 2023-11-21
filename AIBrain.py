@@ -1,5 +1,5 @@
 # Api Key
-fileopen = open("Data\\Api.txt","r")
+fileopen = open("AI Jarvis Using Python Tut\Data\Api.txt","r")
 API = fileopen.read()
 fileopen.close()
 
@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 
 #Coding
 
-openai.api_key = API
+
 load_dotenv()
 completion = openai.Completion()
 
@@ -35,3 +35,4 @@ def ReplyBrain(question,chat_log = None):
     FileLog.write(chat_log_template_update)
     FileLog.close()
     return answer
+ 
